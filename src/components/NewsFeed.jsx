@@ -22,7 +22,7 @@ function NewsFeed() {
   const { news, category, searchTerm, loading, error } = useNewsData();
 
   // Constants and calculations for pagination
-  const pageSize = 9;
+  const pageSize = 7;
   const totalArticles = news.length;
   const totalPages = Math.ceil(totalArticles / pageSize);
   const startIndex = (currentPage - 1) * pageSize;
